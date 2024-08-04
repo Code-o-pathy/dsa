@@ -1,0 +1,80 @@
+// tree-notes
+
+        // node
+        // root
+        // leaf
+        // child
+        // parent
+        // subtree
+        // descendants
+        // ancestors
+        // degree
+        // internal nodes
+
+
+    //application of tree data structures
+
+        //to represent hierarchical data 
+            organisation structures
+            Folder shortcut
+            XML/HTML content(JSON Objects)
+            OOPS(Inheritance)
+        
+        //in Binary Search trees
+
+        //in Binary heap
+
+        //B and B+ trees in DBMS(for indexing)
+
+        //spanning(bridges in networking use spanning  to forward the packets) and shortest path(routers use shortest path tree by considering themselve as the root of the tree and then finding the shortest path to next node) in complext networks
+
+        //parse tree, expression tree in compilers
+
+
+
+    //other applications
+
+        //trie (used tp represent  dictionaries and used in prefix search)
+
+        //suffix tree (pattern matching in texts(large), preprocess the text make a suffix tree of it.)
+
+        //binary index tree-more faster for limited no of operations  for query searches
+
+        //segment tree -more powerful for query seaches
+
+
+    //tree traversal-printing every key  of the tree only once
+
+        //Breadth first(level order) 
+
+        //Depth first
+            (in all the below three left comes first before right and also  left and right can be subtree so solve them recursively)
+            inorder  (Left->root->right)
+            preorder  (root->Left->right)
+            postorder (Left->right->root)
+        
+        (memorizing trick:-
+            left always come before right 
+            preorder     root-left -right  (root-1)
+            inorder      left-root -right  (root-2)
+            postorder    left-right -root  (root-3)
+        
+        )
+
+
+
+//Lowest common ancestor
+    There are four condition(pre assumption the given keys are already present in the tree)
+
+    1. node.key is same as n1 or n2 
+    2.if node.left contains one(n1) and other contains another(n2)
+    3.if any one subtree contains both n1 and n2
+    4.if one of its subtree contains none of the both
+
+    1.return root(node)
+    2.return node
+    3.return that subtrees node(node.left or node.right)
+    4.return null; 
+
+
+
